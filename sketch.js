@@ -53,8 +53,9 @@ function setup() {
 
 function draw() {
 
-  background(rgb(36, 34, 30));
-  fill(255);
+  background("black");
+  stroke("black");
+  fill("white");
   textFont("Lucida Calligraphy");
   textSize(15);
  if((block1.body.speed >= 3 || block1.body.position.y > 500) && 
@@ -83,16 +84,17 @@ function draw() {
     (block24.body.speed >= 3 || block24.body.position.y > 500)&& 
     (block25.body.speed >= 3)|| block25.body.position.y > 500)
 {
-  background(rgb(28, 217, 116));
-  fill(rgb(78, 17, 128));
+  background("green");
+  stroke("green");
+  fill("purple");
   textSize(25);
   text("Good Job !! You destructed both the Pyramids !!", 350, 300);
 }
 else
 {
-  text("Drag the MOUSE to stretch the catapult and aim at the blocks.", 50, 50); 
-  text("Release the MOUSE to shoot the Polygon.", 50, 100);
-  text("Press SPACE Arrow Key to shoot the Polygon again.", 50, 150);
+  text("Drag the MOUSE to stretch the catapult and aim at the blocks", 50, 50); 
+  text("Release the MOUSE to shoot the Polygon", 50, 100);
+  text("Press SPACE Arrow Key to shoot the Polygon again", 50, 150);
   detectCollision(polygon, block1);
   detectCollision(polygon, block2);
   detectCollision(polygon, block3);

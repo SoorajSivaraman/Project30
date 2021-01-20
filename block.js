@@ -1,7 +1,6 @@
 class Block {
   constructor(x, y, width, height, colour) {
       var options = {
-        'isStatic': true,
           'restitution':0,
           'friction':1
 }
@@ -32,8 +31,9 @@ class Block {
         World.remove(world, this.body);
         push();
         tint(255, this.visibility);
-        this.visibility = this.visibility - 1;
-
+        this.visibility = this.visibility - 20;
+        rectMode(CENTER);
+        rect(0, 0, 0, 0);
         pop();
       }
     }
