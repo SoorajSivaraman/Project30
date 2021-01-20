@@ -32,6 +32,7 @@ class Block {
         push();
         tint(255, this.visibility);
         this.visibility = this.visibility - 20;
+        fil("black");
         rectMode(CENTER);
         rect(0, 0, 0, 0);
         pop();
